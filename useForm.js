@@ -1,8 +1,6 @@
-/* custom hook de un formulario, para reutilizarlo */
 import { useState } from 'react'
 
-/* initialState = {},*/
-export const useForm = (initialState = {}) => {
+export const useForm = (initialState = {}) => { /* initialState = {}, inicializado como objeto vacio para evitar problemas */
   
     /* values: equivalen a los input del form */
     const [values, setValues] = useState(initialState)
